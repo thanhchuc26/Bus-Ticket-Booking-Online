@@ -1,0 +1,798 @@
+@charset "ISO-8859-1";
+/* HomePage */
+header{
+    background: rgb(245,246,249);
+    background: linear-gradient(90deg, rgba(245,246,249,1) 0%, rgba(245,248,249,1) 19%, rgba(132,231,99,1) 45%, rgba(3,156,11,1) 100%);
+}    
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .list-right a {
+    color: black;
+    text-decoration: none;
+}
+header .list-right a em {
+    padding-right: 5px;
+}
+header .list-right a:first-child {
+    margin-right: 10px;
+}
+#home-page .slider-top #cityCarouselId {
+    height: 600px;
+    overflow: hidden;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+#home-page .slider-top {
+    position: relative;
+}
+.selectRoute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 66%;
+    background: #41464bb8;
+    border-radius: 10px;
+    padding: 10px;
+}
+.selectRoute label, .selectRoute strong {
+    color: #fff;
+}
+.selectRoute .select-top > div:first-child {
+    margin-right: 22px;
+}
+.d-flex {
+    align-items: center;
+}
+.selectRoute .select-bt {
+    margin: 20px;
+    justify-content: space-between;
+}
+.selectRoute .select-bt label {
+    display: block;
+}
+.selectRoute .select-bt input, .selectRoute .select-bt select {
+    height: 38px;
+    width: 198px;
+    border-radius: 4px;
+    border: none;
+}
+.selectRoute .select-bt em, .selectRoute .select-bt button {
+    color: #fff;
+    margin-top: 20px;
+}
+#home-page .list-tour {
+    margin-bottom: 20px;
+}
+#home-page .list-tour .title-sec, #home-page .booking-bus .title-sec {
+    padding: 20px 0;
+    font-weight: 400;
+}
+#home-page .list-tour .list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+#home-page .list-tour .list-item .item {
+    -webkit-box-shadow: -1px 9px 26px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 26px -10px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 26px -10px rgba(0,0,0,0.75);
+    height: 250px;
+    position: relative;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.3s;
+}
+#home-page .list-tour .list-item .item .content-item {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 21px;
+    transition: 0.3s;
+    color: #fff;
+}
+#home-page .list-tour .list-item .item:hover .content-item {
+    opacity: 1;
+    visibility: visible;
+}
+#home-page .list-tour .list-item .item:hover {
+    transform: translateY(10px);
+}
+#home-page .list-tour .item .content-item .title {
+    font-size: 17px;
+    font-weight: 700;
+}
+#home-page .list-tour .item .content-item .btn-order {
+    background: #fff;
+    font-weight: 700;
+}
+#home-page .booking-bus .desc {
+    padding: 0 35px;
+}
+#home-page .list-banking img:last-child {
+    border-right: 1px solid #3336;
+}
+#home-page .list-banking img {
+    max-width: 165px;
+    border-left: 1px solid #3336;
+    padding: 0 9px;
+}
+#home-page .list-payment {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#home-page .list-payment img{
+    padding: 20px;
+    height: 80px;
+    max-width: 100%;
+}
+
+/* LoginPage */
+#login-page {
+    height: 100vh;
+}
+#login-page h1{
+    margin: -60px 0 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-size: 300%;
+    color: #0d8cd9;
+    text-shadow: 2px 3px 5px whitesmoke;
+}
+#login-page > .box-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(59, 66, 58, 0.71);
+    width: 600px;
+    padding: 100px 50px 50px;
+    height: 700px;
+}
+#login-page a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #0d8cd9;
+}
+#login-page .box-form .tab-content > button{
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    background: #333;
+}
+#login-page #nav-tab {
+    border: none;
+}
+#login-page .nav-item.active {
+    border-bottom: 3px solid #0026d0 !important;
+    color: #fff !important;
+}
+#login-page .box-form .nav-item {
+    background: transparent !important;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    padding: 0;
+}
+.box-form .nav-item:first-child {
+    margin-right: 25px;
+}
+.box-form #nav-tabContent {
+    margin-top: 20px;
+}
+.box-form #nav-tabContent label {
+    display: block;
+    color:#fffffff5;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.box-form #nav-tabContent input {
+    background: #fffffff5;
+    width: 100%;
+    border: none;
+    height: 51px;
+    border-radius: 23px;
+    padding: 10px 20px;
+}
+.box-form #nav-tabContent input:focus {
+    outline: none;
+}
+.box-form .tab-content>.tab-pane .form-group:first-child {
+    margin-bottom: 10px;
+}
+.box-form .btn.btn-primary {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 51px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #0d8cd9;
+}
+
+/* SearchPage */
+#search-page .slider-top, #payment-page .slider-top {
+    height: 350px;
+    position: relative;
+}
+#search-page .slider-top #cityCarouselId, #search-page .slider-top .carousel-inner, #payment-page .slider-top #cityCarouselId, #payment-page .slider-top .carousel-inner {
+    height: 100%;
+}
+.list-tour .title-tour {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0 50px;
+}
+.list-tour .box-tour {
+    background: #13e6e6;
+    padding: 20px 10px 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 7px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 16px 0px rgba(0,0,0,0.75);
+}
+.list-tour .box-tour .top .title {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.list-tour .box-tour .top .depart-day i {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.list-tour .box-tour .top .depart-day span {
+    display: block;
+}
+.list-tour .box-tour .top {
+    justify-content: space-between;
+}
+.list-tour .box-tour .top .depart-day {
+    text-align: center;
+}
+.list-tour .box-tour .top .price .list-item {
+    display: grid;
+}
+.list-tour .box-tour .top .list-item .item span:last-child {
+    font-weight: bold;
+}
+.list-tour .box-tour .top .list-item .item {
+    text-align: left;
+}
+.list-tour .box-tour .top .list-item .item span {
+    display: block;
+}
+.list-tour .box-tour .top > div {
+    min-height: 115px;
+}
+.list-tour .box-tour .bottom {
+    border-top: 1px solid gray;
+    margin-top: 15px;
+    padding: 10px 10px 0;
+}
+.list-tour .box-tour .bottom img {
+    max-width: 140px;
+}
+.choose-tour .box-tour:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+/* Select Seat */
+#booking-seat-page .content-page, #account-page .content {
+    display: grid;
+    grid-template-columns: 64% 34%;
+    grid-gap: 2%;
+}
+#booking-seat-page .content-page .details-tour .title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+#booking-seat-page .content-page .details-tour .type-tour {
+    text-align: center;
+    color: green;
+    font-size: 42px;
+    transition: all;
+}
+#booking-seat-page .details-tour .info-chair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.details-tour .info-chair input {
+    height: 36px;
+    border: 1px solid #ccc;
+    width: calc(100% - 68px);
+}
+.details-tour .info-chair .form-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.details-tour .info-chair label {
+    border: 1px solid #ccc;
+    padding: 5px 14px;
+    width: 63px;
+}
+.details-tour .info-chair .info-right .note {
+    background: green;
+    height: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.details-tour .info-chair .info-right .delete-ticket {
+    background: red;
+    color: #fff;
+    height: 36px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.details-tour .info-tour {
+    -webkit-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    padding: 15px;
+    min-height: 808px;
+}
+.details-tour .info-tour > p:first-child {
+    font-size: 25px;
+    font-weight: 500;
+}
+.option-chair {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.option-chair .top p {
+    margin: 0;
+}
+.option-chair .top {
+    background: green;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.option-chair .mid .text {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.option-chair .mid {
+    background: #0080007d;
+}
+.option-chair .mid .note .note-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+i.fas.fa-couch, i.fas.fa-door-open {
+    font-size: 22px;
+}
+i.fas.fa-door-open {
+    color: red;
+}
+.option-chair .mid .note .note-top >p i {
+    display: inherit;
+}
+.option-chair .mid .note .note-top >p {
+    text-align: center;
+}
+.option-chair .note .note-mid >p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.option-chair .note .note-mid {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #dad9d9;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+.option-chair .note .note-mid >p i {
+    font-size: 18px;
+    margin-right: 3px;
+}
+.option-chair .note .note-mid >p:last-child i {
+    color: red;
+}
+.option-chair .mid .note {
+    padding-bottom: 10px;
+    border-bottom: 3px #333 dashed;
+    margin-bottom: 10px;
+}
+.option-chair .choose-chair .front-row, .option-chair .choose-chair .center-row, .option-chair .choose-chair .last-row {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    text-align: center;
+}
+.option-chair .choose-chair .front-row .chair-left, .option-chair .choose-chair .center-row .chair-left, .option-chair .choose-chair .last-row .chair-left,
+.option-chair .choose-chair .front-row .chair-right, .option-chair .choose-chair .center-row .chair-right, .option-chair .choose-chair .last-row .chair-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.details-tour a.back {
+    background: red;
+    margin-top: 15px;
+    color: #fff;
+}
+.details-tour a.next {
+    background: green;
+    margin-top: 15px;
+    color: #fff;
+    margin-left: 170px;
+}
+
+/* Payment-Page */
+#payment-page .content-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+#payment-page .content-page > div:first-child, #payment-page .content-page > div:last-child {
+    margin-top: 48px;
+}
+#payment-page .content-page > div {
+    -webkit-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    border-top: 7px solid #23cc23;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 25px;
+}
+#payment-page .content-page > div .title {
+    font-size: 21px;
+    font-weight: 600;
+}
+#payment-page .content-page > div .btn-payment {
+    background: green;
+    color: #fff;
+}
+#payment-page .content-page > div .item-payment:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+#payment-page .content-page > div .item-payment label {
+    padding-left: 5px;
+}
+#payment-page .choose-payment img{
+    height: 35px;
+    margin-left: 10px;
+}
+
+/* Account-User */
+#account-page {
+    display: flex;
+}
+#account-page .menu-left {
+    height: 100vh;
+    background: green;
+}
+#account-page .menu-left #nav-tab {
+    border: none;
+}
+#account-page .menu-left #nav-tab > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px;
+    transition: 0.3s;
+}
+div#account-page .menu-left #nav-tab > a:hover, div#account-page .menu-left #nav-tab > a.active {
+    background: #ffffff75;
+    margin: 0 10px;
+    border-radius: 7px;
+}
+div#account-page .menu-left {
+    height: 120vh;
+    background: green;
+    flex: 0 1 250px;
+}
+#account-page .content-right {
+    flex: 0 1 calc(100% - 250px);
+    padding: 50px;
+}
+#account-page .content-right #account.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+#account-page .content-right #account .info-account {
+    flex: 0 1 460px;
+}
+
+#account-page .content-right #account .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#account-page #account .box-info {
+    -webkit-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    padding: 20px;
+    height: 300px;
+    width: 955px;
+}
+#account-page #account .box-info > p span:first-child {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+#account-page #account .box-info > p span:last-child {
+    padding-left: 20px;
+}
+#account-page .delete-row, .btn-view {
+    background: red;
+    color: #fff;
+}
+#account-page #account table thead tr {
+    background: green;
+    color: #fff;
+}
+#account-page #account .btn-primary {
+    position: absolute;
+    bottom: -70px;
+    left: 51%;
+    transform: translateX(-50%);
+    background: green;
+    border: none;
+    height: 40px;
+}
+#change-account .box-update, #account-page .content .box-search, #account-page .content .box-details-tour {
+    -webkit-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 7px 21px -6px rgba(0,0,0,0.75);
+    padding: 20px;
+    overflow: hidden;
+}
+#change-account .box-update .title, #update-account .box-update .title, .seller .title {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+#change-account .box-update .list-group, #update-account .box-update .list-group, .seller .content .list-group, #infomation-travel .box-update .list-group, .box-info .list-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 15px;
+}
+#change-account .box-update .form-group.email, #change-account .box-update .form-group.current-pass, #update-account .box-update .form-group.email, #update-account .box-update .form-group.current-pass,
+.form-group.type-travel, .form-group.status {
+    margin-bottom: 15px;
+}
+#change-account .box-update .btn-primary {
+    float: right;
+    background: green;
+}
+#change-account .box-update label, .seller .content label {
+    margin-bottom: 7px;
+}
+
+/* Account-Agency */
+#account-page .menu-left .title-menu {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    margin-bottom: 25px;
+}
+#account-page.admin-page .menu-left #nav-tab > a {
+    text-align: left;
+    text-transform: uppercase;
+    font-style: inherit;
+    font-size: 17px;
+}
+#account-page.admin-page .content-right {
+    padding: 0;
+    background: #f8f7f7;
+}
+#account-page.admin-page .content-right #account.active {
+    display: block;
+}
+#account-page .info-top {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+#account-page .info-top p {
+    margin: 0;
+    font-size: 22px;
+}
+#account-page .info-top a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#account-page .list-user, .admin-page .box-update {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+#account-page .list-user .box-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#account-page .list-user .box-top .title p {
+    margin: 0;
+}
+#account-page .list-user .box-top .title {
+    font-weight: 400;
+}
+#account-page .list-user .box-top .title p.sub {
+    font-size: 17px;
+    color: #ccc;
+}
+#account-page .list-user .box-top .filter {
+    display: flex;
+    align-items: center;
+}
+#account-page .filter select {
+    height: 40px;
+    min-width: 120px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    margin-right: 5px;
+}
+#account-page .filter input {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#account-page .filter .btn-search {
+    border: 1px solid blue;
+    height: 40px;
+    margin-left: 5px;
+}
+#account-page .filter .search {
+    display: flex;
+    align-items: center;
+}
+#account-page .update-row, #account-page .btn-add {
+    background: #44b6ec;
+    color: #fff;
+}
+.admin-page #change-account .box-update .role, .admin-page #update-account .box-update .role {
+    display: flex;
+    align-items: center;
+}
+.admin-page #change-account .box-update .role >div, .admin-page #update-account .box-update .role > div {
+    margin-left: 10px;
+}
+.admin-page #change-account .box-update .role label, .admin-page #update-account .box-update .role label {
+    margin: 0;
+}
+#account-page .btn-add {
+    float: right;
+}
+.admin-page .box-update .id {
+    margin-bottom: 10px;
+}
+#account-page .content {
+    padding: 20px;
+}
+.seller .option-chair {
+    margin-top: 0;
+}
+.b-search button {
+    position: absolute;
+    right: -46px;
+    bottom: -29px;
+    color: #fff;
+    background: #44b6ec;
+}
+.b-search {
+    position: relative;
+}
+#account-page .content .box-details-tour {
+    margin-top: 45px;
+}
+#account-page .box-details-tour .sub-title {
+    font-size: 15px;
+    color: #ccc;
+}
+#account-page .box-details-tour .title {
+    margin-bottom: 5px;
+}
+#account-page .content .box-details-tour .detail-tour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-weight: 500;
+}
+#account-page .content .box-details-tour .detail-tour p {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+#account-page .content .box-details-tour .detail-tour p span:first-child {
+    font-weight: 500;
+    min-width: 230px;
+    display: inline-block;
+}
+#account-page .content .box-details-tour .btn-next {
+    background: #44b6ec;
+    color: #fff;
+    float: right;
+}
+.box-info thead th {
+    text-transform: uppercase;
+}
+footer {
+    margin-top: 50px;
+    background: black;
+    padding-top: 50px;
+    color: #fff;
+}
+footer .title-widget:after {
+    content: "";
+    width: 106px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+footer .title-widget {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+footer .list-menu {
+    padding-left: 18px;
+}
+footer .list-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .item-ft:last-child .list-menu {
+    list-style: none;
+    padding: 0;
+}
+footer .item-ft:last-child .list-menu li i {
+    padding-right: 7px;
+    width: 24px;
+}
+

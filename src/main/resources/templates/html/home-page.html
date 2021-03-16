@@ -1,0 +1,145 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BusTicketBookingOnline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+  <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="home_page.html" class="logo"><img src="images/logo.png" alt="" height="80px" width="250px"></a>
+      <div class="list-right">
+        <a href="home_page.html"><em class="fas fa-home"></em>Home</a>
+        <a href="login.html" class="">Login</a>
+      </div>
+    </div>
+  </header>
+  <div id="home-page">
+    <div class="slider-top">
+      <div id="cityCarouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide1.jpg" class="d-block w-100" alt="First Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Hồ Chí Minh - Vũng Tàu</h1>
+              <p>Giá chỉ từ 200.000VND</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide2.jpg" class="d-block w-100" alt="Second Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Hồ Chí Minh - Đà Lạt</h1>
+              <p>Giá chỉ từ 250.000VND</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="Third Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Nha Trang - Đà Nẵng</h1>
+              <p>Giá chỉ từ 350.000VND</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#cityCarouselId" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+        <a class="carousel-control-next" href="#cityCarouselId" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+      </div>
+      <form action="" method="POST" role="form" class="selectRoute">
+        <div class="select-bt d-flex">
+          <div class="form-group">
+            <label>From</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Điểm khởi hành</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <em class="fas fa-arrow-right"></em>
+          <div class="form-group">
+            <label>To</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Điểm đến</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Departure</label>
+            <input placeholder="Chọn ngày khởi hành" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+          </div>
+          <button type="submit" class="btn btn-success">Search</button>
+        </div>
+      </form>
+    </div>
+    <div class="list-tour">
+      <h2 class="title-sec text-center">Các tuyến phổ biến</h2>
+      <div class="list-item">
+        <div class="item text-center" style="background-image: url(images/cell1.jpg);">
+          <div class="content-item">
+            <p class="title">Hồ Chí Minh - Nha Trang</p>
+            <p class="desc">Nha Trang là điểm đến hấp dẫn cho ngày hè với những bãi biển trong xanh</p>
+            <p class="price">Giá vé: 250.000VND</p>
+            <a href="" class="btn btn-order">Đặt Ngay</a>
+          </div>
+        </div>
+        <div class="item text-center" style="background-image: url(images/cell2.jpg);">
+          <div class="content-item">
+            <p class="title">Hồ Chí Minh - Vũng Tàu</p>
+            <p class="desc">Hiện nay Vũng Tàu đang là xu hướng của giới trẻ bởi vẻ thơ mộng cũng như không khí mát mẻ</p>
+            <p class="price">Giá vé: 200.000VND</p>
+            <a href="" class="btn btn-order">Đặt Ngay</a>
+          </div>
+        </div>
+        <div class="item text-center" style="background-image: url(images/cell3.jpg);">
+          <div class="content-item">
+            <p class="title">Hồ Chí Minh - Đà Lạt</p>
+            <p class="desc">Thành phố sương mù với vẻ đẹp thơ mộng, cho khách hàng cảm nhận được không khí mát mẻ, trong lành</p>
+            <p class="price">Giá vé: 200.000VND</p>
+            <a href="" class="btn btn-order">Đặt Ngay</a>
+          </div>
+        </div>
+        <div class="item text-center" style="background-image: url(images/cell4.jpg);">
+          <div class="content-item">
+            <p class="title">Nha Trang - Đà Nẵng</p>
+            <p class="desc">Được mệnh danh là thành phố đáng sống nhất Việt Nam, và là điểm đến hấp dẫn cho khách du lịch</p>
+            <p class="price">Giá vé: 350.000VND</p>
+            <a href="" class="btn btn-order">Đặt Ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="booking-bus">
+      <h2 class="title-sec text-center">Bus Ticket Booking Online</h2>
+      <p class="desc text-center">Được thành lập năm 2020, chúng tôi là nền tảng cung cấp các dịch vụ đặt chỗ vận chuyển tuyệt vời cho khách du lịch khắp Việt Nam. Khách du lịch giờ đây không cần rời khỏi nhà để xếp hàng tại phòng vé. Chỉ vài thao tác đơn giản và nhanh chóng quý khách đã có thể đặt vé trực tuyến chỉ trong vài phút!</p>
+    </div>
+    <hr>
+    <div class="list-payment">
+      <img src="images/vietcom.png" alt="">
+      <img src="images/momo.png" alt="">
+      <img src="images/zalopay.png" alt="">
+      <img src="images/airpay.png" alt="">
+      <img src="images/mastercard.png" alt="">
+      <img src="images/verified.png" alt="">
+    </div>
+  </div>
+</body>
+
+</html>

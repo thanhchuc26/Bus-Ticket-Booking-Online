@@ -1,0 +1,74 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BusTicketBookingOnline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+  <link rel="stylesheet" th:href="@{static/css/main.css}">
+</head>
+
+<body>
+  
+  <div id="login-page" style="background-image: url(images/bus3.jpg); background-repeat: no-repeat; background-size: cover;">
+      <form th:action="@{/login}" th:method="post" role="form" class="box-form">
+        <h1 class="text-center pt-1">TRIP NOW</h1>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">LOGIN</a>
+            <a class="nav-link" id="nav-signup-tab" data-bs-toggle="tab" href="#nav-signup" role="tab" aria-controls="nav-signup" aria-selected="false">SIGN UP</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          
+          <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab"
+            	th:action="@{/login/sign-in}" th:method="post" th:object="${user}">
+            <div class="form-group">
+              <label>Your email</label>
+              <input type="email" name="email" placeholder="Enter your gmail">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+          </div>
+
+          
+          
+          <div class="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab"
+               th:action="@{/login/sign-up}" th:method="post" th:object="${user}" >
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Enter your name" th:field="*{name}">
+            </div>
+            <div class="form-group">
+              <label>Address</label>
+              <input type="text" name="Address" placeholder="Enter your address" th:field="*{address}">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Enter your gmail" th:field="*{email}">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Enter your password" th:field="*{password}">
+            </div>
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input type="password" name="password" placeholder="Confirm your password" th:field="*{password}">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
